@@ -13,6 +13,21 @@ const polygoon = [
   [63.604848, 11.073352],
 ];
 
+const polygonE18RD = [
+  [59.034210, 9.695156],
+  [59.042688, 9.653614],
+  [58.972837, 9.452311],
+  [58.953720, 9.486643],
+];
+
+const polygonE39M = [
+  [58.022543, 7.496523],
+  [58.038903, 7.469057],
+  [58.109921, 7.638652],
+  [58.105165, 7.807159],
+  [58.089601, 7.804134]
+];
+
 
 class MapView extends Component {
 
@@ -46,8 +61,18 @@ class MapView extends Component {
         />
         <Polygon 
           onclick={ () => this.setState({position: [63.551440, 10.933473], zoomTo: 11})} 
-          color={'red'} 
+          color={'blue'} 
           positions={polygoon}
+        />
+        <Polygon 
+          onclick={ () => this.setState({position: [59.001439, 9.613338], zoomTo: 11})} 
+          color={'red'} 
+          positions={polygonE18RD}
+        />
+        <Polygon 
+          onclick={ () => this.setState({position: [58.093886,7.644329], zoomTo: 11})} 
+          color={'blue'} 
+          positions={polygonE39M}
         />
         <Control position="topleft">
           <button>Posisjon</button>
