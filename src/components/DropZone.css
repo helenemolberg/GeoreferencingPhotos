@@ -86,6 +86,10 @@
     color: red;
 }
 
+.errorMelding {
+    font-size: 12px;
+}
+
 .file-type-logo {
     width: 25px;
     height: 25px;
